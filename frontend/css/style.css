@@ -5,7 +5,20 @@
     outline: none;
 }
 
-body {
-    background: black;
-    color: white;
+html {
+    font-size: 62.2%;
+}
+
+#container {
+    background-color: #be11f2;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+    padding-bottom: 2rem;
+}
+
+#container h1 {
+    font-size: 3.5rem;
 }
