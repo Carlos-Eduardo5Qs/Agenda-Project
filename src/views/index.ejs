@@ -1,15 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
-    <head>
-        <title>project-CRUD</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge">
-        <meta name="description" content="Meu primeiro CRUD desenvolvido utilizando o Node, Express e mongoDB">
-    </head>
-    <body>
-        <header id="container">
-            <h1 class="title-main">Cadastro de Clientes</h1>
-        </header>
-        <script src="/bundle.js"></script>
-    </body>
-</html>
+<%- include('includes/head'); %>
+<%- include('includes/menu'); %>
+    <header id="container">
+        <div id="container-title"> 
+            <h1>Agenda</h1>
+            <p>Seus contatos estão logo abaixo</p>
+        </div>
+        <div id="error">
+            <p>Espaço para erros</p>
+        </div>
+    </header>
+    <section id="contacts">
+        <div class="center">
+            <table id="table-client">
+                    <tr>
+                        <td>Carlos</td>
+                        <td>Eduardo</td>
+                        <td>940028922</td>
+                        <td>email.examplert@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>Eduardo</td>
+                        <td>940028922</td>
+                        <td>email.examplert@outlook.com</td>
+                    </tr>
+                    <tr>
+                         <td>Carlos</td>
+                        <td>Eduardo</td>
+                        <td>940028922</td>
+                        <td>email.examplert@outlook.com</td>
+                    </tr>
+            </table>
+        </div>
+    </section>
+<%- include('includes/footer.ejs'); %>
+   
