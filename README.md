@@ -3,7 +3,7 @@
 
 ![alt text](https://i0.wp.com/brasap.com.br/wp-content/uploads/2021/03/javascript.gif?fit=980%2C429&ssl=1)
 
-Este projeto se trata de um CRUD simples apenas para exercitar minhas skills em Javascript e Node, eu demorei um tempinho longo por conta que ainda estou um pouco lento no node, ainda estou engatinhado digamos assim, meu objetivo com este projeto é me aprofundar um pouco mais no ambiente do Node e javascript contruindo aplicações cada vez mais complexas.
+Este projeto se trata de um CRUD simples apenas para exercitar minhas skills em Javascript e Node, eu demorei um tempinho longo por conta que ainda estou um pouco lento no node, ainda estou engatinhado digamos assim, meu objetivo com este projeto é me aprofundar um pouco mais no ambiente do Node e javascript construindo aplicações cada vez mais complexas.
 
 ## 🛠️ Como rodar o projeto
 
