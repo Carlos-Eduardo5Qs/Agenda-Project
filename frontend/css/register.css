@@ -6,6 +6,7 @@
     width: 100vw;
     margin: 0 auto;
     background-color: #ebebeb;
+    box-shadow: 1px 5px 3px rgba(0,0,0,0.75);
 }
 
 #sign-in-container {
@@ -27,10 +28,16 @@
     background-color: #3eb593;
 }
 
+#sign-in-content img {
+    width: 150px;
+    height: auto;
+    margin: 2.5rem 0rem;
+}
+
 #sign-in-content article {
     text-align: center;
     color: #f7f7f7;
-    line-height: 3.5rem;
+    line-height: 2.5rem;
 }
 
 #sign-in-content article h1 {
@@ -39,6 +46,14 @@
 
 #sign-in-content article p {
     color: #ebebeb;
+}
+
+#p-1 {
+    margin-top: 2rem;
+}
+
+#p-2 {
+    margin-bottom: 2rem;
 }
 
 #sign-in-content article a {
@@ -53,9 +68,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 90%;
     height: 100%;
     background-color: #ffff;
+}
+
+#sign-in-main a {
+    position: relative;
+    top: 15%;
 }
 
 #sign-in-main h1 {
