@@ -1,0 +1,22 @@
+<%- include('./includes/head'); %>
+    <section id="register">
+        <div id="sign-in-container" class="center">
+            <div id="sign-in-content">
+                <article>
+                    <h1>Walcome Back!</h1>
+                    <p>To keep connected with us</p>
+                    <p>please login with your personal info</p>
+                    <a href="#">sign in</a>
+                </article>
+            </div>
+            <div id="sign-in-main">
+                <form action="/login/register" method="POST" id="sign-up-container">
+                    <h1>Create Account</h1>
+                    <input type="email" placeholder="Email"/>
+                    <input type="password" placeholder="Password"/>
+                    <button type="submit">sign up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<%- include('./includes/footer'); %>

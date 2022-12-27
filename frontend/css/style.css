@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +11,18 @@ html {
     font-size: 62.5%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
