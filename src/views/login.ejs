@@ -1,1 +1,24 @@
-
+<%- include('./includes/head.ejs'); %>
+    <section id="login">
+        <div id="login-container" class="center">
+            <div id="login-register-content">
+                <article>
+                    <img src="/assets/cthulhu.png">
+                    <h1>Create Account !</h1>
+                    <p class="p-1">Abra sua conta agora mesmo e</p>
+                    <p class="p-2"> Modifique sua agenda como quiser</p>
+                    <a href="http://localhost:3000/register/index">Registrar-se</a>
+                </article>
+            </div>
+            <div id="log-into-main">
+                <form action="/login/login" method="POST" id="log-into">
+                    <h1>Entrar com sua conta</h1>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Conectar-se</button>
+                    <a href="#">Não possui uma conta ?</a>
+                </form>
+            </div>
+        </div> 
+    </section>
+<%- include('./includes/footer.ejs'); %>

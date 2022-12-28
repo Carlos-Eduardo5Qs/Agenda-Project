@@ -1,1 +1,117 @@
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #ebebeb;
+    box-shadow: 1px 5px 3px rgba(0,0,0,0.75);
+}
 
+#login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#login-register-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:60vw;
+    background-color: #3eb593;
+}
+
+#login-register-content img {
+    width: 150px;
+    height: auto;
+    margin: 2.5rem 0rem;
+    pointer-events: none;
+}
+
+#login-register-content article {
+    text-align: center;
+    color: #f7f7f7;
+    line-height: 2.5rem;
+}
+
+#login-register-content article h1 {
+    font-size: 3.5rem;
+}
+
+#login-register-content article p {
+    color: #ebebeb;
+}
+
+.p-1 {
+    margin-top: 2rem;
+}
+
+.p-2 {
+    margin-bottom: 2rem;
+}
+
+#login-register-content article a {
+    color: #f7f7f7;
+    border: 0.1rem solid #f7f7f7;
+    border-radius: 20px;
+    padding: 0.3rem 3rem;
+    text-transform: uppercase;
+}
+
+
+#log-into-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    background-color: #ffff;
+}
+
+#log-into-main a {
+    position: relative;
+    top: 15%;
+}
+
+#log-into-main h1 {
+    color: #3eb593;
+}
+
+#log-into-main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+#log-into-main input{
+    width: 300px;
+    height: 40px;
+    background-color: #ebebeb;
+    border: none;
+    padding: 1.5rem;
+}
+
+#log-into-main input::placeholder {
+    color: #7a7a7a;
+}
+
+#log-into-main button {
+    background-color: #3eb593;
+    border: none;
+    color: #ffff;
+    padding: 1.2rem 5rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
