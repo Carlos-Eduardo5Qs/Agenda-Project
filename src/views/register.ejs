@@ -13,6 +13,9 @@
             <div id="sign-in-main">
                 <form action="/login/register" method="POST" id="sign-up-container">
                     <h1>Criar conta</h1>
+
+                    <%- include('includes/panel-errors.ejs'); %>
+
                     <input type="email" placeholder="Email" name="email"/>
                     <input type="password" placeholder="Password" name="password"/>
                     <button type="submit">Registrar-se</button>

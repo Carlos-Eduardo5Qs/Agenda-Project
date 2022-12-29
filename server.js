@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const route = require('./routes.js');
+const middlewareGlobal = require('./src/midlewares/midlewareGlobal.js');
 const path = require('path');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
@@ -37,6 +38,7 @@ const sessionOptions = session({
 
 app.use(sessionOptions);
 app.use(flash());
+app.use(middlewareGlobal.middlewareGlobal);
 app.use(route);
 
 app.on('okay', () => {
