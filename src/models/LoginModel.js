@@ -24,11 +24,11 @@ class Login {
         this.user = await LoginModel.findOne({ email: this.body.email });
 
         if(!this.user) {
-            this.error.push('Este endereço de email não existe');
+            this.error.push('Email invalido');
             return;
         };
 
-        if(!bcryptjs.compareSync(this.body.password, this.body.password)) {
+        if(!bcryptjs.compareSync(this.body.password, this.user.password)) { 
             this.error.push('Senha inválida');
             this.user = null;
             return;
