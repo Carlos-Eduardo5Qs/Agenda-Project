@@ -12,8 +12,8 @@ Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixa
 ## Endereços das rotas
 
 * Página principal acessar: "http://localhost:3000/"
-* Página de cadastro acessar: "http:localhost:3000/register/index"
-* Página de login acessar: "http:localhost:3000/login/index"
+* Página de cadastro acessar: "http://localhost:3000/register/index/"
+* Página de login acessar: "http://localhost:3000/login/index/"
 
 ## Tecnologias/Dependências utilizadas
 
