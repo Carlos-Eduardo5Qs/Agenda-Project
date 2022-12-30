@@ -9,7 +9,13 @@ Este projeto se trata de um CRUD simples apenas para exercitar minhas skills em 
 
 Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixar todas as dependências nescessárias, para iniciar o webpack rode ```npm run build``` e para rodar o servidor web utilizando o "Express" rode o ```npm start``` e accesse "http://localhost:3000/" em seu navegador de preferência
 
-## 🚀 Tecnologias/Dependências utilizadas
+## Endereços das rotas
+
+* Página principal acessar: "http://localhost:3000/"
+* Página de cadastro acessar: "http:localhost:3000/register/index"
+* Página de login acessar: "http:localhost:3000/login/index"
+
+## Tecnologias/Dependências utilizadas
 
 * HTML5
 * CSS3
@@ -23,6 +29,7 @@ Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixa
 * Mongoose
 * Nodemon
 * Validator
+* bscryptjs
 
 ## 🚧 Como o projeto foi desenvolvolvido
 

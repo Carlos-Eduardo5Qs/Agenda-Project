@@ -31,6 +31,10 @@ a {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+}
+
 .center {
     max-width: 1200px;
     margin: 0 auto;

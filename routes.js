@@ -10,6 +10,7 @@ router.get('/login/index', loginController.index);
 router.get('/register/index', registerController.index);
 
 router.post('/login/register', loginController.register);
+router.post('/login/login', loginController.login);
 
 module.exports = router;
 

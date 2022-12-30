@@ -13,8 +13,11 @@
             <div id="log-into-main">
                 <form action="/login/login" method="POST" id="log-into">
                     <h1>Entrar com sua conta</h1>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
+
+                    <%- include('includes/panel-errors.ejs'); %>
+
+                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="password" placeholder="Password" name="password"/>
                     <button type="submit">Conectar-se</button>
                     <a href="#">Não possui uma conta ?</a>
                 </form>
