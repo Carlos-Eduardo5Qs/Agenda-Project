@@ -7,9 +7,9 @@ const LoginSchema = new mongoose.Schema({
     password: { type: String, required: true },
 });
 
-const LoginModel = mongoose.model('Login', LoginSchema);
+const LoginModel = mongoose.model('Users', LoginSchema);
 
-class Login {
+class Authentication {
     constructor(body) {
         this.body = body;
         this.error = [];
@@ -73,5 +73,5 @@ class Login {
     };
 };
 
-module.exports = Login;
+module.exports = Authentication;
 

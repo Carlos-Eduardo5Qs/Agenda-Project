@@ -5,10 +5,12 @@
         </div>
         <nav id="menu-container">
             <ul id="menu-nav">
-                
-                <li><i class="ri-user-line"></i><a href="http://localhost:3000/register/index">Cadastrar</a></li>
-
-                <li><i class="ri-login-box-line"></i><a href="http://localhost:3000/login/index">Log-in</a></li>
+                <% if (!user) {%> 
+                    <li><i class="ri-user-line"></i><a href="http://localhost:3000/register/index">Cadastrar</a></li>
+                    <li><i class="ri-login-box-line"></i><a href="http://localhost:3000/login/index">Logar</a></li>
+                <% } else {%>
+                    <li><i class="ri-user-line"></i><a href="http://localhost:3000/login/logout">Sair</a></li>
+                <% }%>
             </ul>
         </nav>
     </div>

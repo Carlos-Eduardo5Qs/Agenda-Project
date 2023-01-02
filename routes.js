@@ -1,16 +1,16 @@
-const clientsPages = require('./src/controllers/clientsPages.js');
-const loginController = require('./src/controllers/loginController.js');
-const registerController = require('./src/controllers/registerController.js'); 
+const authentication = require('./src/controllers/authentication.js');
 
 const express = require('express');
 const router = express.Router();
 
-router.get('/', clientsPages.mainPage);
-router.get('/login/index', loginController.index);
-router.get('/register/index', registerController.index);
+router.get('/', authentication.mainPage);
+router.get('/login/index', authentication.loginPage);
+router.get('/register/index', authentication.registerPage);
 
-router.post('/login/register', loginController.register);
-router.post('/login/login', loginController.login);
+router.post('/login/register', authentication.register);
+router.post('/login/login', authentication.login);
+
+router.get('/login/logout', authentication.logout);
 
 module.exports = router;
 
