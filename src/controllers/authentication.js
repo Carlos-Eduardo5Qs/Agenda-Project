@@ -1,17 +1,14 @@
 const Authentication = require('./../models/AuthenticationModel.js');
 
 exports.mainPage = (req, res) => {
-    if(!req.session.user) return res.render('login.ejs');
     return res.render('index.ejs');
 };
 
 exports.loginPage = (req, res) => {
-    if(req.session.user) return res.render('index.ejs');
     return res.render('login.ejs');
 };
 
 exports.registerPage = (req, res) => {
-    if(req.session.user) return res.render('index.ejs');
     return res.render('register.ejs');
 };
 
