@@ -1,0 +1,36 @@
+#edit {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem
+}
+
+#header-edit {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#group {
+    height: auto;
+    border: none;
+}
+
+#group input {
+    width: 500px;
+    height: 30px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+#update {
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    background-color: #3eb593;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2.2rem;
+    cursor: pointer;
+}

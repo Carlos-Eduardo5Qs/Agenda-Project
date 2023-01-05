@@ -1,4 +1,27 @@
 <%- include('./includes/head.ejs') %>
 <%- include('./includes/menu.ejs'); %>
-    <p>Salve quebrada!</p>
+    <section id="edit">
+        <div id="header-edit">
+            <h1>Atualize ou edite a sua agenda</h1>
+            <p>Preencha os dados logo a baixo</p>
+        </div>
+        <form action="/add/contact" method="POST" id="form-edit">
+            <fieldset id="group">
+                <div>
+                    <label><strong>Nome:</strong></label><br>
+                    <input type="text" placeholder="Nome" name="name"/><br>
+
+                    <label><strong>Sobrenome:</strong></label><br>
+                    <input type="text" placeholder="Sobrenome" name="lastName"/><br>
+
+                    <label><strong>Email:</strong></label><br>
+                    <input type="text" placeholder="email" name="email"/><br>
+
+                    <label><strong>Telefone:</strong></label><br>
+                    <input type="text" placeholder="Telefone" name="phone"/>
+                </div>
+            </fieldset>
+            <button type="submit" id="update">Enviar</button>
+        </form>
+    </section> 
 <%- include('./includes/footer.ejs') %>

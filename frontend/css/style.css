@@ -60,6 +60,10 @@ a {
     padding: 1rem;
 }
 
+#logo a {
+    color: #fff;
+}
+
 #nav-container {
     display: flex;
     justify-content: space-between;

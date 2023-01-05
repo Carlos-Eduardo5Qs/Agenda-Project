@@ -1,5 +1,5 @@
 const authentication = require('./src/controllers/authentication.js');
-const addRegistration = require('./src/controllers/add-registration.js')
+const contactController = require('./src/controllers/contactController.js')
 const { loginRequired, whileLoggedIn } = require('./src/midlewares/midlewareGlobal.js');
 
 const express = require('express');
@@ -12,7 +12,9 @@ router.get('/register/index', whileLoggedIn, authentication.registerPage);
 router.post('/login/register', authentication.register);
 router.post('/login/login', authentication.login);
 
-router.get('/add/index', loginRequired, addRegistration.editForm);
+router.get('/add/index', loginRequired, contactController.editForm);
+router.post('/add/contact', contactController.addContact);
+
 router.get('/login/logout', authentication.logout);
 
 module.exports = router;
