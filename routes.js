@@ -13,7 +13,7 @@ router.post('/login/register', authentication.register);
 router.post('/login/login', authentication.login);
 
 router.get('/add/index', loginRequired, contactController.editForm);
-router.post('/add/contact', contactController.addContact);
+router.post('/add/contact',loginRequired, contactController.addContact);
 
 router.get('/login/logout', authentication.logout);
 

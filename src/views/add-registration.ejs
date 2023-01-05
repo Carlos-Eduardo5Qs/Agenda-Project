@@ -7,6 +7,7 @@
         </div>
         <form action="/add/contact" method="POST" id="form-edit">
             <fieldset id="group">
+                <%- include('./includes/panel-errors.ejs'); %>
                 <div>
                     <label><strong>Nome:</strong></label><br>
                     <input type="text" placeholder="Nome" name="name"/><br>
