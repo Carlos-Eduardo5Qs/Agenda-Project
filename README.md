@@ -14,6 +14,7 @@ Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixa
 * Página principal acessar: "http://localhost:3000/"
 * Página de cadastro acessar: "http://localhost:3000/register/index/"
 * Página de login acessar: "http://localhost:3000/login/index/"
+* Página de cadastro para contatos da agenda acessar: "http://localhost:3000/add/index"
 
 ## Tecnologias/Dependências utilizadas
 
@@ -34,3 +35,5 @@ Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixa
 ## 🚧 Como o projeto foi desenvolvolvido
 
 Primeiro eu preparei o ambiente instalando Express, Webpack e outras dependências utilizando o gerenciador de pacotes do Node via terminal, Logo em seguida pesquisei por um modelo de CRUD bem simples, achei um e emplementei novas funções para ele utilizando o figma, depois criei este repositório e subi este README.md e dei início ao desenvolvimento deste projeto passando as ideias para o código, eu também utilizei o modelo de projeto MVC (Models, Views e Controllers).
+
+*Grande Abraço!*
