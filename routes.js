@@ -14,6 +14,7 @@ router.post('/login/login', authentication.login);
 
 router.get('/add/index', loginRequired, contactController.editForm);
 router.post('/add/contact',loginRequired, contactController.addContact);
+router.get('/add/index/:id', loginRequired, contactController.editIndex);
 
 router.get('/login/logout', authentication.logout);
 

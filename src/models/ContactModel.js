@@ -6,7 +6,6 @@ const ContactSchema = new mongoose.Schema({
     lastName: { type: String, required: false, default: '' },
     email: { type: String, required: false, default: '' },
     phone: { type: String, requided: false, default: '' },
-    createdIn: { type: Date, default: Date.now },
 });
 
 const ContactModel = mongoose.model('Contact', ContactSchema);
@@ -15,6 +14,13 @@ function Contact(body) {
     this.body = body;
     this.error = [];
     this.contact = null;
+};
+
+Contact.searchId = async function(id) {
+    if(typeof id !== 'string') return
+    const user = await ContactModel.findById(id);
+
+    return user;
 };
 
 Contact.prototype.register = async function() {

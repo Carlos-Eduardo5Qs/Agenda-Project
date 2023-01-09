@@ -1,7 +1,9 @@
 const Contact = require('./../models/ContactModel.js');
 
 exports.editForm = (req, res) => {
-    res.render('add-registration.ejs');
+    res.render('add-registration.ejs', {
+        contact: {},
+    });
     return;
 };
 
@@ -17,7 +19,7 @@ exports.addContact = async function(req, res) {
         };
 
         req.flash('success', 'Contato registrado com sucesso');
-        req.session.save(() => res.redirect(`/contact/index/${contact.contact._id}`));
+        req.session.save(() => res.redirect(`/add/index/${contact.contact._id}`));
         return;
 
     } catch(err) {
@@ -25,4 +27,11 @@ exports.addContact = async function(req, res) {
     };
 };
 
+exports.editIndex = async function(req, res) {
+    if(!req.params.id) return res.send('!!!ERROR 404 NOTFOUND!!!');
 
+    const contact = await Contact.searchId(req.params.id);
+    if(!contact) return res.send('!!!ERROR 404 NOTFOUND!!!');
+
+    res.render('add-registration.ejs', { contact });
+}; 

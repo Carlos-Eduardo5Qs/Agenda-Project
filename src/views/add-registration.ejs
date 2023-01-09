@@ -10,16 +10,16 @@
                 <%- include('./includes/panel-errors.ejs'); %>
                 <div>
                     <label><strong>Nome:</strong></label><br>
-                    <input type="text" placeholder="Nome" name="name"/><br>
+                    <input type="text" value="<%= contact.name %>" placeholder="Nome" name="name"/><br>
 
                     <label><strong>Sobrenome:</strong></label><br>
-                    <input type="text" placeholder="Sobrenome" name="lastName"/><br>
+                    <input type="text" value="<%= contact.lastName %>" placeholder="Sobrenome" name="lastName"/><br>
 
                     <label><strong>Email:</strong></label><br>
-                    <input type="text" placeholder="email" name="email"/><br>
+                    <input type="text" value="<%= contact.email %>" placeholder="email" name="email"/><br>
 
                     <label><strong>Telefone:</strong></label><br>
-                    <input type="text" placeholder="Telefone" name="phone"/>
+                    <input type="text" value="<%= contact.phone %>" placeholder="Telefone" name="phone"/>
                 </div>
             </fieldset>
             <button type="submit" id="update">Enviar</button>
