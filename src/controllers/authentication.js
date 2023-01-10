@@ -1,9 +1,5 @@
 const Authentication = require('./../models/AuthenticationModel.js');
 
-exports.mainPage = (req, res) => {
-    return res.render('index.ejs');
-};
-
 exports.loginPage = (req, res) => {
     return res.render('login.ejs');
 };

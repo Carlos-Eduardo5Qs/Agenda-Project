@@ -57,3 +57,14 @@ exports.edit = async function(req,res) {
     };
         
 };
+
+exports.delete = async function(req, res) {
+    if(!req.params.id) return res.send('!!!ERROR 404 NOTFOUND!!!');
+
+    const contact = await Contact.delete(req.params.id);
+    if(!contact) return res.send('!!!ERROR 404 NOTFOUND!!!');
+
+    req.flash('success', 'Contato apagado com sucesso');
+    req.session.save(() => res.redirect('back'));
+    return;
+};

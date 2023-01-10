@@ -3,19 +3,27 @@
     <header id="container">
         <div id="container-title"> 
             <h1>Agenda</h1>
-            <p>Seus contatos estão logo abaixo</p>
+                <% if(contacts.length > 0) {%>
+                    <p>Seus contatos estão logo abaixo</p>
+                <% } else {%>
+                        <p>Sua agenda está vazia</p>
+                <%}%>
         </div>
     </header>
     <section id="contacts">
         <div class="center">
-            <table id="table-client">
-                <tr>
-                    <td>Carlos</td>
-                    <td>Eduardo</td>
-                    <td>940028922</td>
-                    <td>email.examplert@outlook.com</td>
-                </tr>
-            </table>
+                <table id="table-client">
+                    <% contacts.forEach( contact => { %>
+                        <tr>
+                            <td><%= contact.name %></td>
+                            <td><%= contact.lastName %></td>
+                            <td><%= contact.phone %></td>
+                            <td><%= contact.email %></td>
+                            <td><a href="/add/index/<%= contact._id %>">Editar</a></td>
+                            <td><a href="/contact/delete/<%= contact._id %>">Excluir</a></td>
+                        </tr>
+                    <% }); %>
+                </table>    
         </div>
     </section>
 <%- include('includes/footer.ejs'); %>

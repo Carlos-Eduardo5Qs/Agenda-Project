@@ -23,6 +23,18 @@ Contact.searchId = async function(id) {
     return user;
 };
 
+Contact.searchContacts = async function() {
+    const contacts = await ContactModel.find()
+        .sort({ createdIn: -1 });
+    return contacts;
+};
+
+Contact.delete = async function(id) {
+    if(typeof id !== 'string') return;
+    const contact = await ContactModel.findOneAndDelete({ id: id });
+    return contact;
+};
+
 Contact.prototype.register = async function() {
     this.validation();
 
