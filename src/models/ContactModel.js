@@ -54,4 +54,12 @@ Contact.prototype.clearData = function() {
     };
 };
 
+Contact.prototype.edit = async function(id) {
+    if(typeof id !== 'string') return;
+    this.validation();
+    if(this.error.length > 0) return;
+
+    this.contact = await ContactModel.findByIdAndUpdate(id, this.body, { new: true });
+};
+
 module.exports = Contact;
