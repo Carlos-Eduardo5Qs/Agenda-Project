@@ -19,7 +19,7 @@ exports.addContact = async function(req, res) {
         };
 
         req.flash('success', 'Contato registrado com sucesso');
-        req.session.save(() => res.redirect(`/add/index/${contact.contact._id}`));
+        req.session.save(() => res.redirect(`/`));
         return;
 
     } catch(err) {
@@ -49,7 +49,7 @@ exports.edit = async function(req,res) {
         };
 
         req.flash('success', 'Contato editado com sucesso');
-        req.session.save(() => res.redirect(`/add/index/${contact.contact._id}`));
+        req.session.save(() => res.redirect(`/`));
         return;
     } catch(err) {
         console.error(err);
