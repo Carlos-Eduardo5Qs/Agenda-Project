@@ -5,18 +5,18 @@
 
 Este projeto se trata de um CRUD simples apenas para exercitar minhas skills em Javascript e Node, eu demorei um tempinho longo por conta que ainda estou um pouco lento no node, ainda estou engatinhado digamos assim, meu objetivo com este projeto é me aprofundar um pouco mais no ambiente do Node e javascript construindo aplicações cada vez mais complexas.
 
-## 🛠️ Como rodar o projeto
+## 💨 Como rodar o projeto
 
 Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixar todas as dependências nescessárias, para iniciar o webpack rode ```npm run build``` e para rodar o servidor web utilizando o "Express" rode o ```npm start``` e accesse "http://localhost:3000/" em seu navegador de preferência
 
-## Endereços das rotas
+## 🗺️ Endereços das rotas
 
 * Página principal acessar: "http://localhost:3000/"
 * Página de cadastro acessar: "http://localhost:3000/register/index/"
 * Página de login acessar: "http://localhost:3000/login/index/"
 * Página de cadastro para contatos da agenda acessar: "http://localhost:3000/add/index"
 
-## Tecnologias/Dependências utilizadas
+## 🛠️ Tecnologias/Dependências utilizadas
 
 * HTML5
 * CSS3
@@ -32,10 +32,10 @@ Para rodar o projeto em sua máquina rode o comando ```npm install``` para baixa
 * Validator
 * bscryptjs
 
-## Fotos do projeto
-![title](.projects-pictures/crud.png)
-![title](.projects-pictures/login.png)
-![title](.projects-pictures/register.png)
+## 📷 Fotos do projeto
+![title](project-pictures/crud.png)
+![title](project-pictures/login.png)
+![title](project-pictures/register.png)
 
 ## 🚧 Como o projeto foi desenvolvolvido
 
